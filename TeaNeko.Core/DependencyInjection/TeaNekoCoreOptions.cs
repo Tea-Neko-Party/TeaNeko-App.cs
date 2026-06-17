@@ -9,7 +9,7 @@ public class TeaNekoCoreOptions
 {
     /// <summary>
     /// 缓存通用清理间隔（毫秒），默认 1000（1 秒）。
-    /// IMemoryCache 使用此值控制后台自动清理周期。
+    /// <see cref="Microsoft.Extensions.Caching.Memory.MemoryCache"/> 使用此值控制后台自动清理周期。
     /// </summary>
     public int CacheGeneralCleanRateMs { get; set; } = 1000;
 

@@ -20,6 +20,7 @@ public class ServiceAttribute : Attribute
     /// <summary>
     /// 标记为可自动注册的服务，指定注册 ID。
     /// </summary>
+    /// <param name="id">Keyed 注册使用的服务 ID。</param>
     public ServiceAttribute(string id)
     {
         Id = id;

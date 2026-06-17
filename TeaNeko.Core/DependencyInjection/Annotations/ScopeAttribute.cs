@@ -2,6 +2,7 @@ namespace TeaNeko.Core.DependencyInjection.Annotations;
 
 /// <summary>
 /// 服务生命周期枚举。
+/// 该枚举会被 <see cref="AutoServiceScanner"/> 映射为 MSDI 的 <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime"/>。
 /// </summary>
 public enum ServiceLifetimeScope
 {
@@ -29,6 +30,7 @@ public class ScopeAttribute : Attribute
     /// <summary>
     /// 指定服务生命周期。
     /// </summary>
+    /// <param name="lifetime">服务在依赖注入容器中的生命周期，默认是单例。</param>
     public ScopeAttribute(ServiceLifetimeScope lifetime = ServiceLifetimeScope.Singleton)
     {
         Lifetime = lifetime;

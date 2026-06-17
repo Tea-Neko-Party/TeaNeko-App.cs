@@ -20,6 +20,7 @@ public class BeanAttribute : Attribute
     /// <summary>
     /// 标记 Bean 工厂方法，指定注册 ID。
     /// </summary>
+    /// <param name="id">Keyed 注册使用的 Bean ID。</param>
     public BeanAttribute(string id)
     {
         Id = id;
