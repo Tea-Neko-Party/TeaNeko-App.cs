@@ -1,11 +1,100 @@
+## Build results
 bin/
 obj/
 /packages/
+
+## .NET
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+project.lock.json
+*.nuget.props
+*.nuget.targets
+NuGet.config
+
+## NuGet packages
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.g.props
+*.nuget.g.targets
+
+## Visual Studio
+.vs/
+*.suo
+*.sln.docstates
+*.user
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.pdb
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+node_modules/
+orleans.codegen.cs
+*.vshost.exe
+*.vshost.exe.config
+*.vshost.exe.manifest
+
+## Rider
+.idea/
+*.sln.DotSettings.user
 riderModule.iml
 /_ReSharper.Caches/
 
-### idea ###
-.idea/
+## VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-### temp file ###
+## Test results
+TestResults/
+TestResult.xml
+*.trx
+*.coverage
+*.coveragexml
+.coverage
+
+## Benchmark / Profiling
+BenchmarkDotNet.Artifacts/
+perf.data
+perf.data.old
+*.dmp
+*.etl
+
+## OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+## Temp files
 temp/
+*.tmp
+*.tmp.*
+~$*
+*.swp
+*~
+
+## Event log / cache
+*.log
+*.cache
+
+## App-specific
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+secrets.json
+
+## Coverage
+coverletReport/

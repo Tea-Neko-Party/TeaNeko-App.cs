@@ -1,0 +1,13 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)Version.props" Condition="Exists('$(MSBuildThisFileDirectory)Version.props')" />
+
+  <PropertyGroup>
+    <TeaNekoVersion Condition="'$(TeaNekoVersion)' == ''">0.0.0</TeaNekoVersion>
+    <Version>$(TeaNekoVersion)</Version>
+    <VersionPrefix>$(TeaNekoVersion)</VersionPrefix>
+    <PackageVersion>$(TeaNekoVersion)</PackageVersion>
+    <AssemblyVersion>$(TeaNekoVersion).0</AssemblyVersion>
+    <FileVersion>$(TeaNekoVersion).0</FileVersion>
+    <InformationalVersion>$(TeaNekoVersion)</InformationalVersion>
+  </PropertyGroup>
+</Project>
